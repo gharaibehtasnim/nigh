@@ -84,7 +84,7 @@ const Comments = ({ id, firstname, lastname, socket }) => {
   const getAllNestedCommentsBycommentId = (post_id, comment_id) => {
     axios
       .get(
-        `http://localhost:5000/comments/getnested?comment_id=${comment_id}&post_id=${post_id}`
+        `https://project-nigh.onrender.com/comments/getnested?comment_id=${comment_id}&post_id=${post_id}`
       )
 
       .then((Response) => {
@@ -105,7 +105,7 @@ const Comments = ({ id, firstname, lastname, socket }) => {
   const createNestedComment = (post_id, comment_id) => {
     axios
       .post(
-        `http://localhost:5000/comments/nested?comment_id=${comment_id}&post_id=${post_id}`,
+        `https://project-nigh.onrender.com/comments/nested?comment_id=${comment_id}&post_id=${post_id}`,
         { content: newnrested },
         { headers: { Authorization: token } }
       )
@@ -122,7 +122,7 @@ const Comments = ({ id, firstname, lastname, socket }) => {
 
   const getAllCommentsByPostId = (id) => {
     axios
-      .get(`http://localhost:5000/comments/${id}`, {
+      .get(`https://project-nigh.onrender.com/comments/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((Response) => {
@@ -144,7 +144,7 @@ const Comments = ({ id, firstname, lastname, socket }) => {
       image: newImage,
     };
     axios
-      .post(`http://localhost:5000/comments/${id}`, NewObj, {
+      .post(`https://project-nigh.onrender.com/comments/${id}`, NewObj, {
         headers: { Authorization: token },
       })
       .then((Response) => {
@@ -175,7 +175,7 @@ const Comments = ({ id, firstname, lastname, socket }) => {
     try {
       await axios
         .delete(
-          `http://localhost:5000/comments/comment/${comment_id}`,
+          `https://project-nigh.onrender.com/comments/comment/${comment_id}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }

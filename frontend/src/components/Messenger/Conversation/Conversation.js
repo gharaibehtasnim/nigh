@@ -41,7 +41,7 @@ const Conversation = ({ Oneconversation, theOpenedConversation }) => {
   const getFriendInfo = () => {
     theFriendId &&
       axios
-        .get(`http://localhost:5000/users/others/info/${theFriendId}`, {
+        .get(`https://project-nigh.onrender.com/users/others/info/${theFriendId}`, {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then(function (response) {
@@ -59,7 +59,7 @@ const Conversation = ({ Oneconversation, theOpenedConversation }) => {
     theFriendId &&
       axios
         .get(
-          `http://localhost:5000/conversation/new/messages/${Oneconversation._id}/${theFriendId}`,
+          `https://project-nigh.onrender.com/conversation/new/messages/${Oneconversation._id}/${theFriendId}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }

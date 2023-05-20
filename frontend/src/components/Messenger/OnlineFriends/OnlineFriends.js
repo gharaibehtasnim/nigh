@@ -71,7 +71,7 @@ const OnlineFriends = ({ onlineUsers }) => {
   //   console.log(theFriendId);
   //   theFriendId &&
   //     axios
-  //       .get(`http://localhost:5000/users/others/info/${theFriendId.userId}`, {
+  //       .get(`https://project-nigh.onrender.com/users/others/info/${theFriendId.userId}`, {
   //         headers: { Authorization: `Bearer ${token}` },
   //       })
   //       .then(function (response) {

@@ -17,7 +17,7 @@ const UserTable = () => {
   const [rows, setRows] = useState();
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/count/alluser`)
+      .get(`https://project-nigh.onrender.com/count/alluser`)
       .then((result) => {
         console.log(result.data)
         setRows(result.data);

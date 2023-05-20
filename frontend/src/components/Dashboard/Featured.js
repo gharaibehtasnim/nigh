@@ -14,7 +14,7 @@ const Featured = () => {
 
   const feature=()=>{
     axios
-      .get(`http://localhost:5000/count/newpost`)
+      .get(`https://project-nigh.onrender.com/count/newpost`)
       .then((result) => {
         const value1 = result.data.reduce((acc, elem) => {
           return Number(elem.count) - acc;

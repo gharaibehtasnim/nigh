@@ -53,7 +53,7 @@ const Register = () => {
           setMessage("If you agree with the terms, check the Agree check box");
         } else {
           axios
-            .post("http://localhost:5000/users/register", {
+            .post("https://project-nigh.onrender.com/users/register", {
               firstName,
               lastName,
               email,
@@ -89,7 +89,7 @@ const Register = () => {
   const loginGoogle = (result) => {
     const { credential, clientId } = result;
     axios
-      .post("http://localhost:5000/users/google", {
+      .post("https://project-nigh.onrender.com/users/google", {
         credential,
         clientId,
       })
@@ -98,7 +98,7 @@ const Register = () => {
         const fakePass = family_name + 123456;
 
         axios
-          .post("http://localhost:5000/users/register", {
+          .post("https://project-nigh.onrender.com/users/register", {
             firstName: given_name,
             lastName: family_name,
             email,
@@ -117,7 +117,7 @@ const Register = () => {
           .catch((err) => {
             if (err.response.data.message === "The email already exists") {
               axios
-                .post("http://localhost:5000/users/login", {
+                .post("https://project-nigh.onrender.com/users/login", {
                   email,
                   password: fakePass,
                 })
@@ -142,7 +142,7 @@ const Register = () => {
   };
   const getAllUserInfo = () => {
     axios
-      .get(`http://localhost:5000/users/info`, {
+      .get(`https://project-nigh.onrender.com/users/info`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((Response) => {

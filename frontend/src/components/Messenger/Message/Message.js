@@ -35,7 +35,7 @@ const Messages = ({ mine, message, theOpenedConversation }) => {
   //loggedin user info should be changed when he changes his info (pic)
   const getFriendInfo = () => {
     axios
-      .get(`http://localhost:5000/users/others/info/${theFriendId}`, {
+      .get(`https://project-nigh.onrender.com/users/others/info/${theFriendId}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {

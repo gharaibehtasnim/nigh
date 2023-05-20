@@ -17,7 +17,7 @@ const NewUsers = () => {
   const [rows, setRows] = useState();
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/count/newuser/details`)
+      .get(`https://project-nigh.onrender.com/count/newuser/details`)
       .then((result) => {
         setRows(result.data.detail);
       })

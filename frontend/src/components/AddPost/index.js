@@ -97,7 +97,7 @@ const AddPost = () => {
   const AddingPost = async () => {
     axios
       .post(
-        "http://localhost:5000/posts",
+        "https://project-nigh.onrender.com/posts",
         { ...post },
         { headers: { Authorization: token } }
       )

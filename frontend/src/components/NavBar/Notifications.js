@@ -38,7 +38,7 @@ export default function AccountMenu() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/home/notification`, {
+      .get(`https://project-nigh.onrender.com/home/notification`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {

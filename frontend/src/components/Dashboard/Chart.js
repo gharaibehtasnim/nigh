@@ -15,7 +15,7 @@ const Chart = ({ aspect, title }) => {
  
   const get = async () => {
     try {
-      const result = await axios.get(`http://localhost:5000/count/num`);
+      const result = await axios.get(`https://project-nigh.onrender.com/count/num`);
       if (result.data) {
         setdata(result.data);
       } else throw Error;

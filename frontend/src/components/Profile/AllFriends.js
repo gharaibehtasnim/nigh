@@ -36,7 +36,7 @@ const AllFriends = ({ id }) => {
   //get all friends of any person depending on the user id
   const getAllFriends = () => {
     axios
-      .get(`http://localhost:5000/friends/get/all/${id}`, {
+      .get(`https://project-nigh.onrender.com/friends/get/all/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(function (response) {

@@ -36,7 +36,7 @@ const Profile = () => {
 
   const getuserdata = () => {
     axios
-      .get(`http://localhost:5000/users/others/info/${id}`)
+      .get(`https://project-nigh.onrender.com/users/others/info/${id}`)
       .then((Response) => {
         console.log(Response.data.result);
         const fullName = {
@@ -74,7 +74,7 @@ const Profile = () => {
 
   const getAllPostsByUserId = () => {
     axios
-      .get(`http://localhost:5000/posts/search_1/${id}`, {
+      .get(`https://project-nigh.onrender.com/posts/search_1/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((Response) => {
@@ -90,7 +90,7 @@ const Profile = () => {
   //loggedin user info should be changed when he changes his info (pic)
   const getTheLoggedInUserInfo = () => {
     axios
-      .get(`http://localhost:5000/users/info`, {
+      .get(`https://project-nigh.onrender.com/users/info`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((Response) => {

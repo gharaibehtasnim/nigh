@@ -68,7 +68,7 @@ const EditProfileInfoBtn = () => {
         setSelectedImage("")
         axios
           .put(
-            `http://localhost:5000/users/update/user/info`,
+            `https://project-nigh.onrender.com/users/update/user/info`,
             { avatar: data.url },
             {
               headers: { Authorization: `Bearer ${token}` },
@@ -89,7 +89,7 @@ const EditProfileInfoBtn = () => {
   const editBio = () => {
     axios
       .put(
-        `http://localhost:5000/users/update/user/info`,
+        `https://project-nigh.onrender.com/users/update/user/info`,
         { bio: userBio },
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -121,7 +121,7 @@ const EditProfileInfoBtn = () => {
 
         axios
           .put(
-            `http://localhost:5000/users/update/user/info`,
+            `https://project-nigh.onrender.com/users/update/user/info`,
             { coverImg: data.url },
             {
               headers: { Authorization: `Bearer ${token}` },
