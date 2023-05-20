@@ -1,0 +1,29 @@
+.home-card {
+  width: 200px;
+  float: left;
+  padding: 10px;
+  margin-right: 10px;
+  align-content: center;
+  text-align: center;
+  
+}
+
+.posts {
+    box-shadow: 0px 0px 25px -10px black;
+  
+    /* gap: 50px; */
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .containers {
+    padding: 20px;
+  }
+
+
+  @media (width: 500px) {
+    .home-card{
+      display: none;
+    }
+     
+  }

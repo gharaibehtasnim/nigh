@@ -1,0 +1,76 @@
+.commentbtn {
+  border-radius: 0.375rem;
+  border: none;
+  background-color: #3b71ca;
+  color: white;
+  width: 10rem;
+}
+
+.comment-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.react-input-emoji--input {
+  font-weight: 400;
+  max-height: 100px;
+  min-height: 20px;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  z-index: 1;
+  width: 100%;
+  user-select: text;
+  padding: 9px 12px 11px;
+  text-align: left;
+}
+.react-input-emoji--button svg {
+  fill: #858585;
+}
+
+.write-comment {
+  display: flex;
+  /* gap: 0.5rem; */
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.show-all-replies {
+  border: none;
+  background-color: inherit;
+  color: #3b71ca;
+}
+
+/*NESTED*/
+
+.submit-nested-btn {
+  border-radius: 0.375rem;
+  border: none;
+  background-color: #3b71ca;
+  color: white;
+  width: 3rem;
+}
+
+.nested-input {
+  border-color: rgb(241, 233, 233);
+  border-width: 0.5px;
+  border-radius: 21px;
+  width: 15rem;
+  height: 2.3rem;
+}
+
+.nested-input-btn {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: flex-start;
+  align-items: center;
+}

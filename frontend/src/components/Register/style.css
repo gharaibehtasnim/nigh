@@ -1,0 +1,23 @@
+@media (width: 500px) {
+ /*  div.card-body.d-flex.flex-column,
+  div.row.g-0,
+  div.col-md-6,
+  div.card,
+  div.container.py-5,
+  div.card.rounded-2 {
+    width: 430px;
+  } */
+  img.rounded-start,img.hide {
+    display: none;
+  }
+ div.d-flex.flex-row.mt-2, span.h1.fw-bold.mb-2, img.main-logo{
+    margin-left: -3rem;
+  }
+ div.btn-div{
+margin-left: 0rem;
+  }
+  
+}
+
+ 
+ 

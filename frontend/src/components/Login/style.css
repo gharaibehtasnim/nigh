@@ -1,0 +1,15 @@
+.fw-bold {
+  color: #ff914d;
+}
+
+@media (width: 500px) {
+  iframe.hide,div.hide {
+    display: none;
+  }
+  img.main-logo1{
+    margin-left: 10rem;
+  }
+}
+.btn-custom-class {
+  background-color: wheat;
+}
